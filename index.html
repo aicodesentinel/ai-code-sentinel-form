@@ -264,9 +264,41 @@ footer p {
   <p>📞 +52 656 823 9431  |  ✉️ aicodesentinel@gmail.com<br>
   © 2026 AI CODE SENTINEL — Todos los derechos reservados.</p>
 </footer>
+<script>
+const form = document.querySelector("form");
 
+const ENDPOINT = "https://script.google.com/macros/s/AKfycbzzIRRbFfNdCEV4_GFIQ4ogHsh0GGARnG9Sx6KISmsGbskB8rg31_cSHCkOAI09RGnM/exec";
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const data = Object.fromEntries(new FormData(form).entries());
+
+  try {
+    const r = await fetch(ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    const res = await r.json();
+
+    if (res.ok) {
+      alert("Formulario enviado correctamente ✅");
+      form.reset();
+    } else {
+      alert("Error al enviar ❌");
+      console.log(res);
+    }
+  } catch (err) {
+    alert("No se pudo conectar ❌");
+    console.error(err);
+  }
+});
+</script> 
 </body>
 </html> 
+
 
 
 
