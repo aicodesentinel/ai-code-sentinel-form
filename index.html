@@ -117,21 +117,32 @@ label {
 }
 
 /* -------- BOTONES -------- */
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 .btn-submit {
+  min-width: 260px;      /* 👉 ancho del botón */
+  padding: 14px 32px;    /* 👉 altura y aire */
+  text-align: center;
+
   background: linear-gradient(135deg, #00e5ff, #00ffa6);
   color: #000;
-  padding: 14px 28px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-submit:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0,255,200,0.3);
-}   
+  box-shadow: 0 10px 20px rgba(0, 255, 200, 0.35);
+} 
 /* -------- FOOTER -------- */
 footer {
   margin-top: 40px;
@@ -249,6 +260,7 @@ footer p {
 
 </body>
 </html> 
+
 
 
 
