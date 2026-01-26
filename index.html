@@ -264,42 +264,20 @@ footer p {
   <p>📞 +52 656 823 9431  |  ✉️ aicodesentinel@gmail.com<br>
   © 2026 AI CODE SENTINEL — Todos los derechos reservados.</p>
 </footer>
-<script>
-const form = document.querySelector("form");
+<form action="https://script.google.com/macros/s/AKfycbxql2t56eB4pllaA1T8uOv90tsDFBW6pq3RNVHB6EhX05vnkNKjlnBTDTkPBzIFX/exec" method="POST">
 
-const ENDPOINT = "https://script.google.com/macros/s/AKfycbzzIRRbFfNdCEV4_GFIQ4ogHsh0GGARnG9Sx6KISmsGbskB8rg31_cSHCkOAI09RGnM/exec";
+  <input type="email" name="email" required>
+  <input type="text" name="whatsapp">
+  <input type="text" name="empresa">
+  <input type="text" name="ciudad">
+  <textarea name="descripcion"></textarea>
 
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
+  <button type="submit" class="btn-submit">Enviar</button>
+</form> 
 
-
-  try {
-  const fd = new FormData(form);
-
-  const r = await fetch(ENDPOINT, {
-    method: "POST",
-    body: fd
-  });
-
-  // Apps Script regresa "ok", no JSON
-  const text = await r.text();
-
-  if (r.ok && text.trim().toLowerCase() === "ok") {
-    alert("Formulario enviado correctamente ✅");
-    form.reset();
-  } else {
-    alert("Error al enviar ❌");
-    console.log(text);
-  }
-} catch (err) {
-  alert("No se pudo conectar ❌");
-  console.error(err);
-} 
-   
-});
-</script> 
 </body>
 </html> 
+
 
 
 
