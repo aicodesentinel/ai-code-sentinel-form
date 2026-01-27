@@ -3,30 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- ✅ PREVIEW WhatsApp / Facebook (Open Graph)
-     IMPORTANTE: Esto solo funciona cuando la página está en una URL pública (https).
-     Cambia estas 2 líneas cuando la publiques (GitHub Pages / Netlify):
-     - og:url   = URL pública de esta página
-     - og:image = URL pública DIRECTA de tu logo (ideal 1200x630)
--->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Solicitud de Diseño Web Profesional — AI CODE SENTINEL">
-<meta property="og:description" content="Llena este formulario y envía tu solicitud por WhatsApp o correo.">
-<meta property="og:url" content="https://TU-USUARIO.github.io/ai-code-sentinel-form/">
-<meta property="og:image" content="https://TU-USUARIO.github.io/ai-code-sentinel-form/assets/logo.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Solicitud de Diseño Web Profesional — AI CODE SENTINEL">
-<meta name="twitter:description" content="Llena este formulario y envía tu solicitud por WhatsApp o correo.">
-<meta name="twitter:image" content="https://TU-USUARIO.github.io/ai-code-sentinel-form/assets/logo.png">
-
 <title>Solicitud de Diseño Web Profesional — AI CODE SENTINEL</title>
 
 <style>
-/* -------- AJUSTES GLOBALES -------- */
 :root {
   --color-fondo: #0b0c10;
   --color-acento: #00bcd4;
@@ -38,50 +17,34 @@
 body {
   margin: 0;
   font-family: var(--fuente);
-  background: var(--color-fondo);
+  background-color: var(--color-fondo);
   color: var(--color-texto);
+  line-height: 1.5;
 }
 
-/* -------- HEADER (CABECERA) -------- */
 header {
   background: linear-gradient(135deg, #0b0c10, #101820);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-
-  /* ✅ CABECERA COMPACTA (edita aquí si quieres más/menos espacio) */
-  padding-top: 6px;      /* espacio arriba */
-  padding-bottom: 8px;   /* espacio abajo */
-  gap: 2px;              /* separación entre logo/título/subtítulo */
-  min-height: auto;
+  text-align: center;
+  padding: 10px 0;
 }
 
 header img {
-  /* ✅ Logo en cabecera (edita aquí tamaño/posición) */
-  height: 150px;        /* antes 160px */
-  width: auto;
-  margin: 0;            /* quita separación extra */
-  transform: translateY(-6px); /* sube un poquito */
-  display: block;
+  height: 160px;
+  margin-bottom: -10px;
 }
 
 header h1 {
-  margin: 0;            /* compacta */
-  font-size: 1.55em;
+  margin: 0;
   color: var(--color-acento);
-  font-weight: 600;
-  text-align: center;
+  font-size: 1.6em;
 }
 
 header p {
-  margin: 0;            /* compacta */
-  font-size: 0.92em;
+  margin: 4px 0 0;
   color: var(--color-secundario);
-  text-align: center;
+  font-size: 0.9em;
 }
 
-/* -------- SECCIONES GENERALES -------- */
 section {
   max-width: 800px;
   margin: 20px auto;
@@ -92,213 +55,134 @@ section {
 }
 
 h2 {
-  margin-top: 0;
   color: var(--color-acento);
-  border-bottom: 1px solid rgba(0,188,212,0.2);
-  padding-bottom: 8px;
-}
-
-/* -------- INPUTS -------- */
-input, textarea, select {
-  width: 100%;
-  margin: 8px 0 18px 0;
-  padding: 12px;
-  border-radius: 6px;
-  border: 1px solid rgba(0,188,212,0.3);
-  background: #0f0f0f;
-  color: var(--color-texto);
-  font-size: 1em;
+  border-bottom: 1px solid rgba(0,188,212,0.3);
+  padding-bottom: 5px;
 }
 
 label {
   display: block;
-  font-size: 0.95em;
-  color: var(--color-secundario);
+  margin-top: 15px;
+  font-weight: bold;
 }
 
-/* -------- BOTONES -------- */
-.form-buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  background: #1f1f1f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+textarea { resize: vertical; }
+
+.buttons {
+  text-align: center;
+  margin: 40px 0;
 }
 
 .btn-submit {
-  min-width: 260px;      /* 👉 ancho del botón */
-  padding: 14px 32px;    /* 👉 altura y aire */
-  text-align: center;
-
-  background: linear-gradient(135deg, #00e5ff, #00ffa6);
-  color: #000;
-  border: none;
-  border-radius: 12px;
-  font-size: 16px;
+  width: min(460px, 92%);
+  padding: 15px;
+  font-size: 1em;
   font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #00bcd4, #00ffa6);
+  color: #001018;
   cursor: pointer;
-
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn-submit:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 255, 200, 0.35);
-} 
-/* FORZAR BOTÓN EN EL CENTRO */
-button[type="submit"] {
-  display: block;
-  margin: 30px auto;   /* 👉 CENTRADO */
-  min-width: 280px;    /* 👉 MÁS LARGO */
-  padding: 14px 30px;
-}      
-/* -------- FOOTER -------- */
+  opacity: 0.9;
+}
+
 footer {
-  margin-top: 40px;
-  background: #0f1014;
-  padding: 22px 14px;
   text-align: center;
-  border-top: 1px solid rgba(0,188,212,0.15);
+  padding: 20px;
+  color: var(--color-secundario);
+  font-size: 0.9em;
+  border-top: 1px solid rgba(0,188,212,0.3);
 }
 
 footer img {
-  height: 62px;
-  width: auto;
-  opacity: 0.95;
+  height: 30px;
+  margin-bottom: 10px;
 }
-
-footer p {
-  margin: 10px 0 0 0;
-  color: rgba(255,255,255,0.55);
-  font-size: 0.9em;
-  line-height: 1.35;
-}
-     /* ====== RESPONSIVE (CELULAR) ====== */
-@media (max-width: 600px) {
-  .logo {
-    width: 130px; /* ajusta tamaño en celular */
-  }
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-  <!-- ✅ IMPORTANTE: pon tu logo en /assets/logo.png -->
-  <img class="logo" src="./assets/logo.png" alt="AI CODE SENTINEL Logo">
+  <img src="b232f0b6-9dcf-4c0c-b2bd-2cb4b058cab9.png" alt="AI CODE SENTINEL Logo">
   <h1>Solicitud de Diseño Web Profesional</h1>
   <p>AI CODE SENTINEL — Diseño inteligente, seguridad total</p>
 </header>
 
+<form action="PEGA_AQUI_TU_URL_DE_APPS_SCRIPT_EXEC" method="POST">
+
 <section>
   <h2>Datos de contacto</h2>
+
   <label>Nombre completo:</label>
-  <input type="text" placeholder="Ejemplo: Ana Gabriela Torres">
+  <input type="text" name="nombre" required>
 
   <label>Correo electrónico:</label>
-  <input type="email" placeholder="Ejemplo: cliente@correo.com">
+  <input type="email" name="email" required>
 
   <label>WhatsApp o teléfono:</label>
-  <input type="text" placeholder="+52 656 000 0000">
+  <input type="text" name="whatsapp" required>
 
-  <label>Nombre de la empresa o marca:</label>
-  <input type="text" placeholder="Ejemplo: NutriBalance Clínica Nutricional">
+  <label>Empresa o marca:</label>
+  <input type="text" name="empresa">
 
   <label>Ciudad / ubicación:</label>
-  <input type="text" placeholder="Ejemplo: Ciudad Juárez">
+  <input type="text" name="ciudad">
 </section>
 
 <section>
   <h2>Información del proyecto</h2>
-  <label>Describe brevemente tu negocio o servicio:</label>
-  <textarea rows="3" placeholder="Ofrecemos planes nutricionales personalizados y consultas en línea..."></textarea>
 
-  <label>Objetivo principal del sitio web:</label>
-  <textarea rows="2" placeholder="Generar nuevos clientes, mostrar servicios, vender en línea..."></textarea>
+  <label>Descripción del negocio:</label>
+  <textarea name="descripcion_negocio"></textarea>
 
-  <label>Servicios o productos que ofreces:</label>
-  <textarea rows="2" placeholder="Consultas, planes, cursos, productos, etc."></textarea>
+  <label>Objetivo del sitio web:</label>
+  <textarea name="objetivo_principal"></textarea>
 
-  <label>¿Tienes un sitio web actual?</label>
-  <input type="text" placeholder="Si ya tienes, pega el enlace aquí">
-</section>
+  <label>Servicios o productos:</label>
+  <textarea name="servicios_productos"></textarea>
 
-<section>
-  <h2>Estilo y contenido</h2>
-  <label>¿Qué estilo buscas?</label>
-  <input type="text" placeholder="Minimalista, elegante, moderno, oscuro, etc.">
+  <label>Colores o estilo visual:</label>
+  <input type="text" name="colores_estilo">
 
-  <label>Colores preferidos:</label>
-  <input type="text" placeholder="Ej: negro + acento cyan">
-
-  <label>¿Tienes referencias? (sitios que te gusten)</label>
-  <textarea rows="2" placeholder="Pega enlaces aquí..."></textarea>
-
-  <label>Eslogan o mensaje de marca:</label>
-  <input type="text" placeholder="Diseño inteligente, seguridad total">
-</section>
-
-<section>
-  <h2>Multimedia (opcional)</h2>
-  <p>Sube tu logo, imágenes o música (máx. 3 MB cada uno).</p>
+  <label>Slogan:</label>
+  <input type="text" name="slogan">
 </section>
 
 <section>
   <h2>Notas adicionales</h2>
-  <textarea rows="3" placeholder="Escribe aquí cualquier instrucción o comentario adicional..."></textarea>
+  <textarea name="notas_adicionales"></textarea>
 </section>
 
 <section>
-  <h2>Firma del cliente (opcional)</h2>
-  <input type="text" placeholder="Nombre completo">
+  <h2>Firma del cliente</h2>
+  <input type="text" name="firma_cliente">
 </section>
 
-     <div class="form-buttons">
-  <button type="submit" class="btn-submit">
-    Enviar
-  </button>
-</div> 
+<div class="buttons">
+  <button type="submit" class="btn-submit">Enviar</button>
+</div>
+
+</form>
 
 <footer>
-  <img src="./assets/logo.png" alt="Logo AI CODE SENTINEL">
-  <p>📞 +52 656 823 9431  |  ✉️ aicodesentinel@gmail.com<br>
-  © 2026 AI CODE SENTINEL — Todos los derechos reservados.</p>
+  <img src="b232f0b6-9dcf-4c0c-b2bd-2cb4b058cab9.png">
+  <p>📞 +52 656 823 9431 | ✉️ aicodesentinel@gmail.com<br>
+  © 2026 AI CODE SENTINEL</p>
 </footer>
-<form action="<form action="https://script.google.com/macros/s/AKfycbzCL5zQmEZkx0xZ1k_gBOMp01dMt4oxD7U74I_uLAjUfZYJhnEQPXYIt9fN5yMS8C09/exec" method="POST">
-
-  <input type="email" name="email" required>
-  <input type="text" name="whatsapp">
-  <input type="text" name="empresa">
-  <input type="text" name="ciudad">
-  <textarea name="descripcion"></textarea>
-
-  <button type="submit" class="btn-submit">Enviar</button>
-</form> 
-/exec" method="POST">
-
-  <input type="email" name="email" required>
-  <input type="text" name="whatsapp">
-  <input type="text" name="empresa">
-  <input type="text" name="ciudad">
-  <textarea name="descripcion"></textarea>
-
-  <button type="submit" class="btn-submit">Enviar</button>
-</form> 
 
 </body>
-</html> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
