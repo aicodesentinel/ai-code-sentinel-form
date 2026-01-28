@@ -1,143 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Solicitud de Diseño Web Profesional — AI CODE SENTINEL</title>
-
-<style>
-:root{
-  --color-fondo:#0b0c10;
-  --color-acento:#00bcd4;
-  --color-texto:#f0f0f0;
-  --color-secundario:#cfd8dc;
-  --fuente:'Inter',sans-serif;
-}
-body{margin:0;font-family:var(--fuente);background:var(--color-fondo);color:var(--color-texto);line-height:1.5;}
-header{
-  background:linear-gradient(135deg,#0b0c10,#101820);
-  display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
-  padding:10px 0;text-align:center;
-}
-header img{height:160px;width:auto;margin-bottom:-10px;transform:translateY(-10px);}
-header h1{margin:0;color:var(--color-acento);font-size:1.6em;font-weight:600;}
-header p{margin:4px 0 0;color:var(--color-secundario);font-size:.9em;}
-
-section{
-  max-width:800px;margin:20px auto;background:#121212;
-  border:1px solid rgba(0,188,212,.3);border-radius:8px;padding:30px;
-}
-h2{color:var(--color-acento);border-bottom:1px solid rgba(0,188,212,.3);padding-bottom:5px;}
-label{display:block;margin-top:15px;font-weight:bold;color:var(--color-texto);}
-input,textarea{
-  width:100%;padding:10px;border-radius:5px;border:none;background:#1f1f1f;color:#fff;margin-top:5px;font-size:1em;
-}
-textarea{resize:vertical;}
-
-.buttons{text-align:center;margin:40px 0;}
-.btn-submit{
-  display:inline-block;width:min(520px,92%);padding:15px 22px;border-radius:8px;border:none;
-  background:linear-gradient(135deg,#00bcd4,#00ffa6);color:#001018;font-weight:800;letter-spacing:.3px;
-  cursor:pointer;transition:transform .2s ease,opacity .2s ease;
-}
-.btn-submit:hover{transform:translateY(-3px);opacity:.95;}
-
-footer{
-  text-align:center;font-size:.9em;padding:20px;color:var(--color-secundario);
-  border-top:1px solid rgba(0,188,212,.3);margin-top:30px;
-}
-footer img{height:30px;display:block;margin:0 auto 10px;}
-
-@media (max-width:600px){
-  header img{height:65px;}
-  header h1{font-size:1.3em;}
-  section{padding:20px;}
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI CODE SENTINEL - Formulario</title>
+  <style>
+    body{font-family:system-ui,Arial;max-width:900px;margin:20px auto;padding:0 14px}
+    header{display:flex;gap:14px;align-items:center;border-bottom:1px solid #ddd;padding-bottom:12px;margin-bottom:18px}
+    img{width:70px;height:70px;object-fit:contain}
+    h1{font-size:22px;margin:0}
+    p{margin:6px 0 0;color:#444}
+    .box{border:1px solid #ddd;border-radius:12px;padding:14px;margin:14px 0}
+    label{display:block;font-weight:600;margin:10px 0 6px}
+    input,textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:10px}
+    textarea{min-height:90px}
+    button{padding:12px 16px;border:0;border-radius:12px;background:#111;color:#fff;font-weight:700;cursor:pointer}
+    small{color:#666}
+  </style>
 </head>
-
 <body>
 
 <header>
   <!-- LOGO: si ya tienes el archivo, NO cambies nada -->
   <img src="b232f0b6-9dcf-4c0c-b2bd-2cb4b058cab9.png" alt="AI CODE SENTINEL Logo">
-  <h1>Solicitud de Diseño Web Profesional</h1>
-  <p>AI CODE SENTINEL — Diseño inteligente, seguridad total</p>
+  <div>
+    <h1>Solicitud de Diseño Web Profesional</h1>
+    <p>AI CODE SENTINEL — Diseño inteligente, seguridad total</p>
+  </div>
 </header>
 
 <!-- ✅ FORMULARIO REAL -->
 <form
-  action="https://script.google.com/macros/s/AKfycbztweIvu9SbnNgzwH99GdjLwX5vIAjhsCpgCsacGz3MyQG7sL34FFIpweJERHZa-DIN/exec"
+  action="https://script.google.com/macros/s/AKfycbxaSFk2vwcmLzV-D1LhBOkR648J0vy9cWRMmYgXIZFb1CAJj2FDP--5Ut8QnIooxAEW/exec"
   method="POST"
 >
-  <section>
+
+  <div class="box">
     <h2>Datos de contacto</h2>
 
-    <label>Nombre completo:</label>
+    <label>Nombre completo</label>
     <input type="text" name="nombre" placeholder="Ejemplo: Ana Gabriela Torres" required>
 
-    <label>Correo electrónico:</label>
+    <label>Correo electrónico</label>
     <input type="email" name="email" placeholder="Ejemplo: cliente@correo.com" required>
 
-    <label>WhatsApp o teléfono:</label>
+    <label>WhatsApp o teléfono</label>
     <input type="text" name="whatsapp" placeholder="Ejemplo: +52 656 123 4567" required>
 
-    <label>Nombre de la empresa o marca:</label>
-    <input type="text" name="empresa" placeholder="Ejemplo: NutriBalance Clínica Nutricional">
+    <label>Nombre de tu negocio</label>
+    <input type="text" name="empresa" placeholder="Ejemplo: Dentista Sonrisa Perfecta" required>
 
-    <label>Ciudad / ubicación:</label>
-    <input type="text" name="ciudad" placeholder="Ejemplo: Ciudad Juárez, Chihuahua">
-  </section>
+    <label>Ciudad</label>
+    <input type="text" name="ciudad" placeholder="Ejemplo: Ciudad Juárez, Chih." required>
+  </div>
 
-  <section>
+  <div class="box">
     <h2>Información del proyecto</h2>
 
-    <label>Describe brevemente tu negocio o servicio:</label>
-    <textarea name="descripcion_negocio" rows="3" placeholder="Ejemplo: Ofrecemos consultas nutricionales, planes personalizados y seguimiento semanal."></textarea>
+    <label>¿Qué hace tu negocio?</label>
+    <textarea name="descripcion_negocio" placeholder="Ejemplo: Clínica dental enfocada en estética, ortodoncia y urgencias. Atendemos por cita y WhatsApp."></textarea>
 
-    <label>Objetivo principal del sitio web:</label>
-    <textarea name="objetivo_principal" rows="2" placeholder="Ejemplo: Conseguir clientes por WhatsApp, mostrar servicios y agendar citas."></textarea>
+    <label>Objetivo principal del sitio</label>
+    <textarea name="objetivo_principal" placeholder="Ejemplo: Generar citas por WhatsApp y mostrar servicios con confianza."></textarea>
 
-    <label>Servicios o productos que ofreces:</label>
-    <textarea name="servicios_productos" rows="3" placeholder="Ejemplo: Consulta inicial, plan mensual, control de peso, nutrición deportiva."></textarea>
+    <label>Servicios / productos</label>
+    <textarea name="servicios_productos" placeholder="Ejemplo: Limpiezas, blanqueamiento, brackets, resinas, extracciones."></textarea>
 
-    <label>Colores o estilo visual deseado:</label>
-    <input type="text" name="colores_estilo" placeholder="Ejemplo: Negro + azul neón, moderno, tecnológico y elegante">
+    <label>Colores / estilo deseado</label>
+    <textarea name="colores_estilo" placeholder="Ejemplo: Estilo elegante, moderno, tonos negro + dorado o azul + blanco."></textarea>
 
-    <label>Slogan o frase principal:</label>
-    <input type="text" name="slogan" placeholder="Ejemplo: Diseño inteligente, seguridad total">
-  </section>
+    <label>Slogan (si tienes)</label>
+    <input type="text" name="slogan" placeholder="Ejemplo: Sonríe con confianza">
 
-  <section>
-    <h2>Multimedia (opcional)</h2>
-    <p>Si ya tienes tu logo en Drive/Dropbox/Google Photos, pega el link aquí.</p>
+    <label>Link del logo (opcional)</label>
+    <input type="url" name="logo_link" placeholder="Ejemplo: https://drive.google.com/...">
 
-    <label>Link del logo (opcional):</label>
-    <input type="text" name="logo_link" placeholder="Ejemplo: https://drive.google.com/file/d/.../view">
-  </section>
+    <label>Notas adicionales</label>
+    <textarea name="notas_adicionales" placeholder="Ejemplo: Quiero botón flotante de WhatsApp y sección de testimonios."></textarea>
 
-  <section>
-    <h2>Notas adicionales</h2>
-    <textarea name="notas_adicionales" rows="3" placeholder="Ejemplo: Quiero que tenga sección de testimonios, galería, y botón flotante de WhatsApp."></textarea>
-  </section>
-
-  <section>
-    <h2>Firma del cliente (opcional)</h2>
-    <input type="text" name="firma_cliente" placeholder="Ejemplo: Ana Gabriela Torres">
-  </section>
-
-  <div class="buttons">
-    <button class="btn-submit" type="submit">Enviar</button>
+    <label>Firma del cliente (texto)</label>
+    <input type="text" name="firma_cliente" placeholder="Ejemplo: Ana G. Torres">
   </div>
-</form>
 
-<footer>
-  <img src="b232f0b6-9dcf-4c0c-b2bd-2cb4b058cab9.png" alt="Logo AI CODE SENTINEL">
-  <p>📞 +52 656 823 9431  |  ✉️ aicodesentinel@gmail.com<br>
-  © 2026 AI CODE SENTINEL — Todos los derechos reservados.</p>
-</footer>
+  <button type="submit">Enviar</button>
+  <p><small>Al enviar, se guardará en Google Sheets y te llegará una notificación por correo.</small></p>
+</form>
 
 </body>
 </html>
-
-
