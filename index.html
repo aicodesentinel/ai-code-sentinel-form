@@ -1,239 +1,32 @@
-<!doctype html>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI CODE SENTINEL — Formulario</title>
-  <style>
-    :root{
-      --bg:#060A12;
-      --panel:#0B1220;
-      --panel2:#0E1930;
-      --text:#D7E7FF;
-      --muted:#8FB2D6;
-      --line:rgba(0, 229, 255, .22);
-      --accent:#00E5FF;
-      --accent2:#12B8FF;
-      --shadow: 0 18px 60px rgba(0,0,0,.55);
-      --radius: 16px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background:
-        radial-gradient(900px 500px at 70% 10%, rgba(0,229,255,.14), transparent 55%),
-        radial-gradient(700px 420px at 20% 90%, rgba(18,184,255,.10), transparent 55%),
-        var(--bg);
-      color:var(--text);
-      min-height:100vh;
-      padding:32px 16px 56px;
-    }
-    .wrap{max-width:900px;margin:0 auto}
-    header{
-      text-align:center;
-      margin: 10px 0 24px;
-    }
-    header img{
-      width: 86px;
-      height:auto;
-      display:block;
-      margin:0 auto 10px;
-      filter: drop-shadow(0 0 18px rgba(0,229,255,.25));
-    }
-    h1{
-      font-size: clamp(20px, 2.4vw, 30px);
-      margin: 0 0 6px;
-      color: var(--accent);
-      letter-spacing:.2px;
-      text-shadow: 0 0 18px rgba(0,229,255,.12);
-    }
-    .sub{
-      margin:0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-    .card{
-      background: linear-gradient(180deg, rgba(11,18,32,.92), rgba(7,12,22,.92));
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding: 22px;
-      overflow:hidden;
-      position:relative;
-    }
-    .card:before{
-      content:"";
-      position:absolute;
-      inset:-2px;
-      border-radius: var(--radius);
-      background: radial-gradient(600px 220px at 20% 0%, rgba(0,229,255,.18), transparent 60%);
-      pointer-events:none;
-      opacity:.9;
-    }
-    .card > *{position:relative}
-    .section-title{
-      margin: 6px 0 14px;
-      font-size: 18px;
-      color: var(--accent);
-      letter-spacing:.2px;
-    }
-    .grid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
-    @media (max-width:720px){
-      .grid{grid-template-columns:1fr}
-      .card{padding:18px}
-    }
-    label{
-      display:block;
-      font-size: 13px;
-      color: var(--muted);
-      margin: 0 0 6px;
-    }
-    input, textarea, select{
-      width:100%;
-      border-radius: 12px;
-      border: 1px solid rgba(0,229,255,.22);
-      background: rgba(14,25,48,.55);
-      color: var(--text);
-      padding: 12px 12px;
-      outline:none;
-      transition: .15s ease;
-    }
-    input::placeholder, textarea::placeholder{color:rgba(143,178,214,.65)}
-    input:focus, textarea:focus, select:focus{
-      border-color: rgba(0,229,255,.55);
-      box-shadow: 0 0 0 3px rgba(0,229,255,.10);
-    }
-    textarea{min-height:90px;resize:vertical}
-    .full{grid-column:1/-1}
-    .btnrow{
-      display:flex;
-      gap:12px;
-      align-items:center;
-      margin-top: 14px;
-      flex-wrap:wrap;
-    }
-    button{
-      border:0;
-      padding: 12px 16px;
-      border-radius: 12px;
-      cursor:pointer;
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      color:#001019;
-      font-weight: 700;
-      letter-spacing:.2px;
-      box-shadow: 0 14px 32px rgba(0,229,255,.12);
-      transition:.15s ease;
-    }
-    button:hover{transform: translateY(-1px)}
-    .hint{
-      font-size: 12px;
-      color: rgba(143,178,214,.85);
-    }
-    .note{
-      margin-top:10px;
-      font-size:12px;
-      color: rgba(143,178,214,.80);
-    }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <!-- LOGO: si ya tienes tu archivo, NO lo cambies -->
-      <img src="b232f0b6-9dcf-4c0c-b2bd-2cb4b058cab9.png" alt="AI CODE SENTINEL Logo">
-      <h1>Solicitud de Diseño Web Profesional</h1>
-      <p class="sub">AI CODE SENTINEL — Diseño inteligente, seguridad total</p>
-    </header>
+<form 
+  action="https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbwKVtlSZGDC3-seANYIsTCf2Pz3Fb0gy_yYXwLJaRBv0Hsa8CIttD9GgKngIS7_PGol/exec" 
+  method="POST"
+>
 
-    <div class="card">
-      <form action="https://script.google.com/macros/s/AKfycbzn8e9O3I2GdgjFx5aFKo-68IpTB-FMfjJaAUiA5CMAJQfKoEoJwz5mLIDbHXUgmhOQ/exec" method="POST">
-        <div class="section-title">Datos de contacto</div>
+  <h2>Datos de contacto</h2>
 
-        <div class="grid">
-          <div>
-            <label>Nombre completo</label>
-            <input type="text" name="nombre" placeholder="Ejemplo: Ana Gabriela Torres" required>
-          </div>
+  <input type="text" name="nombre" placeholder="Ejemplo: Ana Gabriela Torres" required>
+  <input type="email" name="email" placeholder="Ejemplo: cliente@correo.com" required>
+  <input type="text" name="whatsapp" placeholder="+52 656 000 0000" required>
+  <input type="text" name="empresa" placeholder="Ejemplo: Cafetería Aroma">
 
-          <div>
-            <label>Correo electrónico</label>
-            <input type="email" name="email" placeholder="Ejemplo: cliente@correo.com" required>
-          </div>
+  <input type="text" name="ciudad" placeholder="Ejemplo: Ciudad Juárez, Chih.">
 
-          <div>
-            <label>WhatsApp o teléfono</label>
-            <input type="text" name="whatsapp" placeholder="Ejemplo: +52 656 123 4567" required>
-          </div>
+  <textarea name="descripcion_negocio" placeholder="Describe tu negocio brevemente"></textarea>
+  <textarea name="objetivo_principal" placeholder="¿Qué quieres lograr con tu sitio web?"></textarea>
+  <textarea name="servicios_productos" placeholder="Servicios o productos principales"></textarea>
 
-          <div>
-            <label>Nombre de tu negocio</label>
-            <input type="text" name="empresa" placeholder="Ejemplo: Dentista Sonrisa Perfecta" required>
-          </div>
+  <textarea name="colores_estilo" placeholder="Ejemplo: tonos café, beige y verde oscuro"></textarea>
 
-          <div>
-            <label>Ciudad</label>
-            <input type="text" name="ciudad" placeholder="Ejemplo: Ciudad Juárez, Chih." required>
-          </div>
+  <input type="text" name="slogan" placeholder="Ejemplo: Buen café, mejores amigos">
 
-          <div class="full">
-            <label>Descripción del negocio</label>
-            <textarea name="descripcion_negocio" placeholder="Ejemplo: Clínica dental familiar, 10 años, buscamos atraer más citas por WhatsApp." required></textarea>
-          </div>
+  <!-- ESTE ES OPCIONAL, NO required -->
+  <input type="url" name="logo_link" placeholder="Link del logo (opcional)">
 
-          <div class="full">
-            <label>Objetivo principal</label>
-            <textarea name="objetivo_principal" placeholder="Ejemplo: Conseguir más prospectos y agendar citas desde la web." required></textarea>
-          </div>
+  <textarea name="notas_adicionales" placeholder="Notas adicionales"></textarea>
 
-          <div class="full">
-            <label>Servicios / productos</label>
-            <textarea name="servicios_productos" placeholder="Ejemplo: Limpieza dental, ortodoncia, blanqueamiento, implantes." required></textarea>
-          </div>
+  <input type="text" name="firma_cliente" placeholder="Nombre completo del cliente" required>
 
-          <div class="full">
-            <label>Colores / estilo deseado</label>
-            <textarea name="colores_estilo" placeholder="Ejemplo: Estilo moderno. Colores café, beige y verde oscuro. Tipografía clara. Se vea bien en celular." required></textarea>
-          </div>
+  <button type="submit">Enviar</button>
 
-          <div>
-            <label>Slogan (si tienes)</label>
-            <input type="text" name="slogan" placeholder="Ejemplo: Sonríe con confianza">
-          </div>
-
-          <div>
-            <label>Link del logo (opcional)</label>
-            <!-- IMPORTANTE: NO es URL obligatoria, NO required, NO type=url -->
-            <input type="text" name="logo_link" placeholder="Opcional: pega un link si tienes. Si no, déjalo vacío o escribe 'no tengo'.">
-          </div>
-
-          <div class="full">
-            <label>Notas adicionales</label>
-            <textarea name="notas_adicionales" placeholder="Ejemplo:
-- Google Maps: https://maps.google.com/...
-- Redes: Instagram/Facebook
-- Referencias de sitios que te gustan
-- Cualquier detalle extra"></textarea>
-          </div>
-
-          <div class="full">
-            <label>Firma del cliente (texto)</label>
-            <input type="text" name="firma_cliente" placeholder="Ejemplo: Carlos Mendoza" required>
-          </div>
-        </div>
-
-        <div class="btnrow">
-          <button type="submit">Enviar</button>
-          <div class="hint">Al enviar, se guardará en Google Sheets y te llegará una notificación por correo.</div>
-        </div>
-
-        <div class="note">*El campo “Link del logo” es opcional. No bloquea el envío.</div>
-      </form>
-    </div>
-  </div>
-</body>
-</html>
+</form>
