@@ -1,32 +1,114 @@
-<form 
-  action="https://script.google.com/macros/s/https://script.google.com/macros/s/AKfycbwKVtlSZGDC3-seANYIsTCf2Pz3Fb0gy_yYXwLJaRBv0Hsa8CIttD9GgKngIS7_PGol/exec" 
-  method="POST"
->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solicitud de Diseño Web Profesional — AI CODE SENTINEL</title>
+<style>
+/* Tu estética original se mantiene intacta */
+:root {
+  --color-fondo: #0b0c10;
+  --color-acento: #00bcd4;
+  --color-texto: #f0f0f0;
+  --color-secundario: #cfd8dc;
+  --fuente: 'Inter', sans-serif;
+}
+body { margin: 0; font-family: var(--fuente); background-color: var(--color-fondo); color: var(--color-texto); line-height: 1.5; }
+header { background: linear-gradient(135deg, #0b0c10, #101820); display: flex; flex-direction: column; align-items: center; padding: 10px 0; text-align: center; }
+header img { height: 160px; width: auto; }
+header h1 { margin: 5px 0; font-size: 1.6em; color: var(--color-acento); }
+section { max-width: 800px; margin: 20px auto; background: #121212; border: 1px solid rgba(0,188,212,0.3); border-radius: 8px; padding: 30px; }
+h2 { color: var(--color-acento); border-bottom: 1px solid rgba(0,188,212,0.3); padding-bottom: 5px; }
+label { display: block; margin-top: 15px; font-weight: bold; }
+input, textarea { width: 100%; padding: 10px; border-radius: 5px; border: none; background: #1f1f1f; color: #fff; margin-top: 5px; box-sizing: border-box; }
+.container-btn { text-align: center; margin: 40px 0; }
+.btn-enviar { background-color: var(--color-acento); color: #0b0c10; padding: 15px 50px; border: none; border-radius: 30px; font-size: 1.2em; font-weight: bold; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 15px rgba(0, 188, 212, 0.4); }
+.btn-enviar:hover { transform: translateY(-3px); background-color: #fff; }
+footer { text-align: center; padding: 20px; color: var(--color-secundario); border-top: 1px solid rgba(0,188,212,0.3); }
+</style>
+</head>
+<body>
 
-  <h2>Datos de contacto</h2>
+<header>
+  <img src="b232f0b6-9dcf-4c0c-b2bd-2cb4b058cab9.png" alt="AI CODE SENTINEL Logo">
+  <h1>Solicitud de Diseño Web Profesional</h1>
+  <p>AI CODE SENTINEL — Diseño inteligente, seguridad total</p>
+</header>
 
-  <input type="text" name="nombre" placeholder="Ejemplo: Ana Gabriela Torres" required>
-  <input type="email" name="email" placeholder="Ejemplo: cliente@correo.com" required>
-  <input type="text" name="whatsapp" placeholder="+52 656 000 0000" required>
-  <input type="text" name="empresa" placeholder="Ejemplo: Cafetería Aroma">
+<form id="formulario-leads">
+  <section>
+    <h2>Datos de contacto</h2>
+    <label>Nombre completo:</label>
+    <input type="text" name="Nombre" placeholder="Ejemplo: Ana Gabriela Torres" required>
+    <label>Correo electrónico:</label>
+    <input type="email" name="Email" placeholder="Ejemplo: cliente@correo.com" required>
+    <label>WhatsApp o teléfono:</label>
+    <input type="text" name="Telefono" placeholder="+52 656 000 0000" required>
+    <label>Nombre de la empresa (Opcional):</label>
+    <input type="text" name="Empresa" placeholder="Ejemplo: NutriBalance">
+    <label>Ciudad / ubicación (Opcional):</label>
+    <input type="text" name="Ubicacion" placeholder="Ejemplo: Ciudad Juárez">
+  </section>
 
-  <input type="text" name="ciudad" placeholder="Ejemplo: Ciudad Juárez, Chih.">
+  <section>
+    <h2>Información del proyecto (Todo Opcional)</h2>
+    <label>Negocio o servicio:</label>
+    <textarea name="Negocio" rows="3"></textarea>
+    <label>Objetivo principal:</label>
+    <textarea name="Objetivo" rows="2"></textarea>
+    <label>Servicios que ofreces:</label>
+    <textarea name="Servicios" rows="3"></textarea>
+    <label>Colores o estilo visual:</label>
+    <input type="text" name="Estilo">
+    <label>Slogan o frase:</label>
+    <input type="text" name="Slogan">
+  </section>
 
-  <textarea name="descripcion_negocio" placeholder="Describe tu negocio brevemente"></textarea>
-  <textarea name="objetivo_principal" placeholder="¿Qué quieres lograr con tu sitio web?"></textarea>
-  <textarea name="servicios_productos" placeholder="Servicios o productos principales"></textarea>
+  <section>
+    <h2>Multimedia (Opcional)</h2>
+    <p>Pega aquí enlaces a Drive o Dropbox si tienes archivos:</p>
+    <input type="text" name="Multimedia_Link" placeholder="Enlace a logo o imágenes">
+  </section>
 
-  <textarea name="colores_estilo" placeholder="Ejemplo: tonos café, beige y verde oscuro"></textarea>
+  <section>
+    <h2>Notas adicionales (Opcional)</h2>
+    <textarea name="Notas" rows="3"></textarea>
+  </section>
 
-  <input type="text" name="slogan" placeholder="Ejemplo: Buen café, mejores amigos">
+  <section>
+    <h2>Firma del cliente (Opcional)</h2>
+    <input type="text" name="Firma" placeholder="Firma digital (Nombre)">
+  </section>
 
-  <!-- ESTE ES OPCIONAL, NO required -->
-  <input type="url" name="logo_link" placeholder="Link del logo (opcional)">
-
-  <textarea name="notas_adicionales" placeholder="Notas adicionales"></textarea>
-
-  <input type="text" name="firma_cliente" placeholder="Nombre completo del cliente" required>
-
-  <button type="submit">Enviar</button>
-
+  <div class="container-btn">
+    <button type="submit" id="submitBtn" class="btn-enviar">ENVIAR SOLICITUD</button>
+  </div>
 </form>
+
+<script>
+  // REEMPLAZA ESTA URL CON LA QUE TE DE GOOGLE
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzvkyq1GHnP0Omp8eOSGA_CIYHLmsggaHVbVbIovmGf_y_ATBCoaaG3wP2mZzQKoOkf/exec';
+  const form = document.getElementById('formulario-leads');
+  const btn = document.getElementById('submitBtn');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    btn.disabled = true;
+    btn.innerHTML = "ENVIANDO...";
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          alert("¡Solicitud enviada! Nos pondremos en contacto pronto.");
+          form.reset();
+          btn.disabled = false;
+          btn.innerHTML = "ENVIAR SOLICITUD";
+      })
+      .catch(error => {
+          alert("Error al enviar. Verifica tu conexión.");
+          btn.disabled = false;
+          btn.innerHTML = "ENVIAR SOLICITUD";
+      });
+  });
+</script>
+</body>
+</html>
