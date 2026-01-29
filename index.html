@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Solicitud de Diseño Web Profesional — AI CODE SENTINEL</title>
 <style>
-/* Tu estética original se mantiene intacta */
+/* Estética original AI CODE SENTINEL */
 :root {
   --color-fondo: #0b0c10;
   --color-acento: #00bcd4;
@@ -16,7 +16,7 @@
 body { margin: 0; font-family: var(--fuente); background-color: var(--color-fondo); color: var(--color-texto); line-height: 1.5; }
 header { background: linear-gradient(135deg, #0b0c10, #101820); display: flex; flex-direction: column; align-items: center; padding: 10px 0; text-align: center; }
 header img { height: 160px; width: auto; }
-header h1 { margin: 5px 0; font-size: 1.6em; color: var(--color-acento); }
+header h1 { margin: 5px 0; font-size: 1.6em; color: var(--color-acento); font-weight: 600; }
 section { max-width: 800px; margin: 20px auto; background: #121212; border: 1px solid rgba(0,188,212,0.3); border-radius: 8px; padding: 30px; }
 h2 { color: var(--color-acento); border-bottom: 1px solid rgba(0,188,212,0.3); padding-bottom: 5px; }
 label { display: block; margin-top: 15px; font-weight: bold; }
@@ -51,23 +51,22 @@ footer { text-align: center; padding: 20px; color: var(--color-secundario); bord
   </section>
 
   <section>
-    <h2>Información del proyecto (Todo Opcional)</h2>
-    <label>Negocio o servicio:</label>
+    <h2>Información del proyecto</h2>
+    <label>Describe brevemente tu negocio o servicio:</label>
     <textarea name="Negocio" rows="3"></textarea>
-    <label>Objetivo principal:</label>
+    <label>Objetivo principal del sitio web:</label>
     <textarea name="Objetivo" rows="2"></textarea>
-    <label>Servicios que ofreces:</label>
+    <label>Servicios o productos que ofreces:</label>
     <textarea name="Servicios" rows="3"></textarea>
-    <label>Colores o estilo visual:</label>
+    <label>Colores o estilo visual deseado:</label>
     <input type="text" name="Estilo">
-    <label>Slogan o frase:</label>
+    <label>Slogan o frase principal:</label>
     <input type="text" name="Slogan">
   </section>
 
   <section>
     <h2>Multimedia (Opcional)</h2>
-    <p>Pega aquí enlaces a Drive o Dropbox si tienes archivos:</p>
-    <input type="text" name="Multimedia_Link" placeholder="Enlace a logo o imágenes">
+    <input type="text" name="Multimedia_Link" placeholder="Enlace a Drive o Dropbox">
   </section>
 
   <section>
@@ -77,7 +76,7 @@ footer { text-align: center; padding: 20px; color: var(--color-secundario); bord
 
   <section>
     <h2>Firma del cliente (Opcional)</h2>
-    <input type="text" name="Firma" placeholder="Firma digital (Nombre)">
+    <input type="text" name="Firma" placeholder="Nombre completo">
   </section>
 
   <div class="container-btn">
@@ -85,9 +84,13 @@ footer { text-align: center; padding: 20px; color: var(--color-secundario); bord
   </div>
 </form>
 
+<footer>
+  <p>© 2026 AI CODE SENTINEL — Todos los derechos reservados.</p>
+</footer>
+
 <script>
-  // REEMPLAZA ESTA URL CON LA QUE TE DE GOOGLE
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzvkyq1GHnP0Omp8eOSGA_CIYHLmsggaHVbVbIovmGf_y_ATBCoaaG3wP2mZzQKoOkf/exec';
+  // PEGA AQUÍ LA URL QUE TE DE GOOGLE AL IMPLEMENTAR
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxIUt9NWofct2qC-H-_VZCcL0JTTaFBVklvyg5IQaHRUFjLGqVnxGbfTdaocjQyky-C/exec';
   const form = document.getElementById('formulario-leads');
   const btn = document.getElementById('submitBtn');
 
@@ -98,13 +101,14 @@ footer { text-align: center; padding: 20px; color: var(--color-secundario); bord
 
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-          alert("¡Solicitud enviada! Nos pondremos en contacto pronto.");
+          alert("¡Información enviada con éxito a AI CODE SENTINEL!");
           form.reset();
           btn.disabled = false;
           btn.innerHTML = "ENVIAR SOLICITUD";
       })
       .catch(error => {
-          alert("Error al enviar. Verifica tu conexión.");
+          console.error('Error!', error.message);
+          alert("Hubo un error al enviar. Por favor intenta de nuevo.");
           btn.disabled = false;
           btn.innerHTML = "ENVIAR SOLICITUD";
       });
